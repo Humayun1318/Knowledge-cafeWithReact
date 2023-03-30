@@ -1,0 +1,53 @@
+.header-container hr{
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid rgba(17, 17, 17, 0.15);
+    height: 0px;
+
+}
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    margin: 50px 150px 32px;
+    /* border: 2px solid black; */
+    
+    
+}
+
+nav.header a{
+    text-decoration: none;
+    color: black;
+}
+.profile-image{
+    width: 60px;
+    height: 60px;
+}
+.header-logo{
+    width: 306px;
+    height: 64px;
+    color: #111111;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+    .header-logo{
+        width: 153px;
+        height: 32px;
+        font-size: 20px;
+    }
+    .header-container hr{
+         margin: 20px 60px 16px;
+    }
+    .header{
+       margin: 20px 60px 16px;
+    }
+    .profile-image{
+        width: 30px;
+        height: 30px;
+    }
+}

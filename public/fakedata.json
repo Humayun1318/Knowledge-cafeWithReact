@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "authorName": "John Smith",
+        "blogTitle": "10 Tips for Writing Better Code",
+        "images": {
+            "blogCoverImage": "https://example.com/images/cover1.jpg",
+            "authorImage": "https://example.com/images/author1.jpg"
+        },
+        "readTime": "10 min",
+        "publishDate": "2022-02-28"
+    },
+    {
+        "id": 2,
+        "authorName": "Jane Doe",
+        "blogTitle": "How to Build a Successful Startup",
+        "images": {
+            "blogCoverImage": "https://example.com/images/cover2.jpg",
+            "authorImage": "https://example.com/images/author2.jpg"
+        },
+        "readTime": "15 min",
+        "publishDate": "2022-03-15"
+    },
+    {
+        "id": 3,
+        "authorName": "Bob Johnson",
+        "blogTitle": "The Benefits of Yoga for Mind and Body",
+        "images": {
+            "blogCoverImage": "https://example.com/images/cover3.jpg",
+            "authorImage": "https://example.com/images/author3.jpg"
+        },
+        "readTime": "8 min",
+        "publishDate": "2022-03-20"
+    },
+    {
+        "id": 4,
+        "authorName": "Sarah Lee",
+        "blogTitle": "How to Make Delicious Vegan Meals",
+        "images": {
+            "blogCoverImage": "https://example.com/images/cover4.jpg",
+            "authorImage": "https://example.com/images/author4.jpg"
+        },
+        "readTime": "12 min",
+        "publishDate": "2022-03-25"
+    }
+]
