@@ -25,7 +25,12 @@ const Blogs = () => {
                 }
             </div>
             <div className="side-container">
-                
+                <div className='side-container-upper'>
+
+                </div>
+                <div className='side-container-lower'>
+
+                </div>
             </div>
         </div>
     );

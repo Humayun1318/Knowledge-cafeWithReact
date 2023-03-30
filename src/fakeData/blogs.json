@@ -7,7 +7,7 @@
             "blogCoverImage": "https://example.com/images/cover1.jpg",
             "authorImage": "https://example.com/images/author1.jpg"
         },
-        "readTime": "10 min",
+        "readTime": "10",
         "publishDate": "2022-02-28"
     },
     {
@@ -18,7 +18,7 @@
             "blogCoverImage": "https://example.com/images/cover2.jpg",
             "authorImage": "https://example.com/images/author2.jpg"
         },
-        "readTime": "15 min",
+        "readTime": "15",
         "publishDate": "2022-03-15"
     },
     {
@@ -29,7 +29,7 @@
             "blogCoverImage": "https://example.com/images/cover3.jpg",
             "authorImage": "https://example.com/images/author3.jpg"
         },
-        "readTime": "8 min",
+        "readTime": "8",
         "publishDate": "2022-03-20"
     },
     {
@@ -40,7 +40,7 @@
             "blogCoverImage": "https://example.com/images/cover4.jpg",
             "authorImage": "https://example.com/images/author4.jpg"
         },
-        "readTime": "12 min",
+        "readTime": "12",
         "publishDate": "2022-03-25"
     }
 ]

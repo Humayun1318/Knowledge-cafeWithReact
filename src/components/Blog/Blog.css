@@ -1,3 +1,6 @@
+.blog-single-part{
+    padding: 5px;
+}
 .blog-single-part hr{
     margin-bottom: 40px;
     border: 1px solid rgba(17, 17, 17, 0.1);
@@ -32,13 +35,22 @@
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
+    margin-bottom: 0;
 
 }
 .date{
+    margin-top: 0;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     color: rgba(17, 17, 17, 0.6);
+}
+.min-read-time{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.6);
+    
 }
 .title-part-bottom{
     margin-bottom: 38px;
@@ -51,7 +63,7 @@
     font-weight: 700;
     font-size: 40px;
 }
-.read-btn{
+.mark-read-btn{
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -71,4 +83,50 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .blog-single-part hr{
+        width: 100%;
+    }
+    .blog-cover-image{
+        width: 100%;
+       height: 225px;
+   }
+   .profile-flex{
+       gap: 12px;
+   }
+   .profile-flex img{
+       width: 30px;
+       height: 30px;
+   }
+   .author-name{
+      font-size: 15px;
+   }
+   .date{
+      font-size: 12px;
+   }
+   .min-read-time button{
+      padding: 0.3em 0.6em;
+      
+   }
+   .min-read-time{
+      font-size: 15px;
+   }
+   .blog-title{
+      font-size: 20px;
+   }
+   .mark-read-btn{
+      font-size: 15px;
+   }
+   .blog-title-part-1{
+      font-size: 15px;
+   }
+   .title-under-text{
+      font-size: 15px;
+   }
+
 }
