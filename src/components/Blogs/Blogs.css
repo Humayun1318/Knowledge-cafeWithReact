@@ -1,7 +1,7 @@
 .blogs-container{
     margin: 50px 150px 32px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 60% 40%;
     gap: 24px;
     /* height: 100vh; */
     
@@ -11,9 +11,10 @@
    border: 5px solid red;
 }
 .side-container{
-   height: 300px;
+   /* height: 300px; */
    border: 5px solid salmon;
 }
+
 
 
 
@@ -29,6 +30,19 @@
     }
     .side-container{
        margin-top: 24px;
+    }
+    .side-container-upper{
+        padding: 10px 25px;
+    }
+    .side-container-lower{
+        padding: 15px;
+    }
+    
+    .on-read-time{
+        font-size: 18px;
+    }
+    .bookmarked-blogs{
+        font-size: 18px;
     }
 
 }

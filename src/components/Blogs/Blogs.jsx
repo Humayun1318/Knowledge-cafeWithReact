@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
+import Sider from '../Sider/Sider';
 import './Blogs.css'
 
 const Blogs = () => {
@@ -25,12 +26,7 @@ const Blogs = () => {
                 }
             </div>
             <div className="side-container">
-                <div className='side-container-upper'>
-
-                </div>
-                <div className='side-container-lower'>
-
-                </div>
+                <Sider></Sider>
             </div>
         </div>
     );

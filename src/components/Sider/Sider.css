@@ -1,0 +1,52 @@
+.side-container-upper{
+    background: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+    padding: 21px 50px;
+    margin-bottom: 24px;
+}
+.on-read-time{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #6047EC;
+}
+.side-container-lower{
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    padding: 30px;
+    border: 2px solid red;
+    /* height: 100vh; */
+}
+.bookmarked-blogs{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #111111;
+
+}
+.under-booked-mark-blogs{
+    background: #FFFFFF;
+    border-radius: 8px;
+    /* width: 351px; */
+    height: 98px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .side-container-upper{
+        padding: 10px 25px;
+    }
+    .side-container-lower{
+        padding: 15px;
+    }
+    
+    .on-read-time{
+        font-size: 18px;
+    }
+    .bookmarked-blogs{
+        font-size: 18px;
+    }
+
+}
