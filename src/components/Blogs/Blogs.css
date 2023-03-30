@@ -3,11 +3,11 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 24px;
-    height: 100vh;
+    /* height: 100vh; */
     
 }
 .blog-container{
-   height: 300px;
+   width: 100%;
    border: 5px solid red;
 }
 .side-container{
@@ -23,7 +23,12 @@
         display: block;
         margin: 20px 60px 16px;
     }
+    .blog-container{
+        width: 100%;
+
+    }
     .side-container{
        margin-top: 24px;
     }
+
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Blog from '../Blog/Blog';
 import './Blogs.css'
 
 const Blogs = () => {
@@ -15,7 +16,12 @@ const Blogs = () => {
         <div className='blogs-container'>
             <div className="blog-container">
                 {
-                    blogs.map(blog=>console.log(blog))
+                    blogs.map(blog => <Blog
+                        key={blog.id}
+                        blog={blog}
+                    >
+                        
+                    </Blog>)
                 }
             </div>
             <div className="side-container">
