@@ -1,9 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import './SideCart.css'
 
-const SideCart = ({time}) => {
-    // console.log(time)
-    const [ spentTime, setSpentTime ] = useState(time);
+const SideCart = ({time, bookedMark}) => {
+    console.log(bookedMark)
+    const [spentTime, setSpentTime] = useState(time);
+
+    // const [book, setBook] = useState(bookedMark);
+    
+    // useEffect(() => {
+    //     const getBookedMarkFromStorage = JSON.parse(localStorage.getItem("bookedMark"));
+    //     setBook(getBookedMarkFromStorage)
+    // }, [bookedMark])
+    
+
+
     
     useEffect(() => {
         const getReadTimeFromStorage = localStorage.getItem("readTime")
@@ -17,11 +27,10 @@ const SideCart = ({time}) => {
 
             </div>
             <div className='side-container-lower'>
-                <h1 className='bookmarked-blogs'>Bookmarked Blogs : { }</h1>
+                <h1 className='bookmarked-blogs'>Bookmarked Blogs : {bookedMark.length}</h1>
 
-                <div className='under-booked-mark-blogs'>
-
-
+                <div>
+                    <p className='under-booked-mark-blogs'>{bookedMark[0].blogTitle}</p>
                 </div>
             </div>
         </div>

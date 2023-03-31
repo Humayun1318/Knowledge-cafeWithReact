@@ -5,7 +5,9 @@ import './Blogs.css'
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
-    const [time, setTime] = useState("")
+    const [time, setTime] = useState("");
+    const [bookedMark, setBookedMark] = useState([]);
+    // const [id, setId] = useState("");
 
     useEffect(() => {
         fetch('blogs.json')
@@ -13,8 +15,8 @@ const Blogs = () => {
             .then(data => setBlogs(data))
 
     }, []);
-
-   
+    
+    // function for mark as read button which coming blog.jsx component
     const timeOnRead = (blog) => {
         // console.log(blog)
         const { readTime } = blog;
@@ -31,6 +33,30 @@ const Blogs = () => {
         }
     }
 
+    // function for booked mark button which coming blog.jsx component
+    const bookedMarkBlogs = (blog) => {
+        // console.log(blog);
+        // const { blogTitle } = blog;
+
+        // const previousBookedMark = JSON.parse(localStorage.getItem('bookedMark'));
+        // if (previousBookedMark) {
+        //     const upDateBookedMark = previousBookedMark + blogTitle;
+        //     localStorage.setItem('bookedMark', JSON.stringify(upDateBookedMark))
+        //     setBookedMark(upDateBookedMark)
+        //     alert('already exist')
+        // }
+        // else {
+        //     localStorage.setItem('bookedMark', JSON.stringify(blogTitle))
+        //     setBookedMark(blogTitle)
+        // }
+
+        // setBookedMark(blog)
+        // setId(id)
+        const newBlog = [...bookedMark, blog]
+        setBookedMark(newBlog)
+       
+    }
+
     return (
         <div className='blogs-container'>
             <div className="blog-container">
@@ -39,14 +65,17 @@ const Blogs = () => {
                         key={blog.id}
                         blog={blog}
                         timeOnRead={timeOnRead}
+                        bookedMark={bookedMarkBlogs}
                     >
 
                     </Blog>)
                 }
             </div>
             <div className="side-container">
-                <SideCart time={time}>
-
+                <SideCart
+                    time={time}
+                    bookedMark={bookedMark}
+                >
                 </SideCart>
             </div>
         </div>
