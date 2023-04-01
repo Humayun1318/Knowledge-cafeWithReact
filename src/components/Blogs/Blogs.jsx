@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 import SideCart from '../SideCart/SideCart';
 import './Blogs.css'
+import { ToastContainer, toast } from 'react-toastify';
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
@@ -35,25 +36,15 @@ const Blogs = () => {
 
     // function for booked mark button which coming blog.jsx component
     const bookedMarkBlogs = (blog) => {
-        // console.log(blog);
-        // const { blogTitle } = blog;
-
-        // const previousBookedMark = JSON.parse(localStorage.getItem('bookedMark'));
-        // if (previousBookedMark) {
-        //     const upDateBookedMark = previousBookedMark + blogTitle;
-        //     localStorage.setItem('bookedMark', JSON.stringify(upDateBookedMark))
-        //     setBookedMark(upDateBookedMark)
-        //     alert('already exist')
-        // }
-        // else {
-        //     localStorage.setItem('bookedMark', JSON.stringify(blogTitle))
-        //     setBookedMark(blogTitle)
-        // }
-
-        // setBookedMark(blog)
-        // setId(id)
-        const newBlog = [...bookedMark, blog]
-        setBookedMark(newBlog)
+        const isBookmarked = bookedMark.some((b) => b.id === blog.id);
+        if (isBookmarked) {
+            const newBlog = [...bookedMark, blog];
+            setBookedMark(newBlog);
+            toast("You Have Already Bookmarked This Blog");
+        } else {
+            const newBlog = [...bookedMark, blog];
+            setBookedMark(newBlog);
+        }
        
     }
 

@@ -4,25 +4,7 @@ import './SideCart.css'
 const SideCart = ({ time, bookedMark }) => {
     // console.log(bookedMark)
     const [spentTime, setSpentTime] = useState(time);
-    // const [title, setTitle]=useState("")
-
-    // const [book, setBook] = useState(bookedMark);
-
-    // useEffect(() => {
-    //     const getBookedMarkFromStorage = JSON.parse(localStorage.getItem("bookedMark"));
-    //     setBook(getBookedMarkFromStorage)
-    // }, [bookedMark])
-    // let a = " ";
-    // for (const title of bookedMark) {
-    //     if (a) {
-    //         a = title.blogTitle;
-    //     }
-    //     else {
-    //         // alert("hoooooooooooooooo")
-    //     }
-    // }
-
-
+    // const [title, setTitle]=useState([])
 
     useEffect(() => {
         const getReadTimeFromStorage = localStorage.getItem("readTime")
@@ -41,7 +23,7 @@ const SideCart = ({ time, bookedMark }) => {
                 <div >
                     {
                         bookedMark.map(b => <p className='under-booked-mark-blogs'
-                            >{b.blogTitle}
+                             >{b.blogTitle}
                             </p>)
                     }
                 </div>
