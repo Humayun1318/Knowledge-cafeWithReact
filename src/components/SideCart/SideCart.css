@@ -32,15 +32,16 @@
     border-radius: 8px;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 18px;
     padding: 20px;
-    height: 80px;
+    height: 45px;
+    
 }
 
 /* Tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .under-booked-mark-blogs{
-    font-size: 22px;
+    font-size: 15px;
   }
 }
 
@@ -60,7 +61,7 @@
         font-size: 18px;
     }
     .under-booked-mark-blogs{
-        font-size: 18px;
+        font-size: 12px;
     }
 
 }

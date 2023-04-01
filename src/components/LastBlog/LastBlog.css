@@ -1,5 +1,5 @@
 .last-blog-container{
-    margin: 50px 150px 32px;
+    margin: 50px 150px 50px;
 }
 .last-bl-title{
     text-align: center;
@@ -13,12 +13,19 @@
 
 }
 .individual-question{
-    height: 300px;
+    /* height: 300px; */
+    padding: 15px;
     border-radius: 10px;
-    background-color: rgb(68, 0, 255);
-
+    background: rgba(17, 17, 17, 0.05);
 }
-
+.answer{
+    font-style: normal;
+    font-weight: 400;
+    color: #111111;
+}
+.Ans{
+    color: coral;
+}
 
 /* Tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
