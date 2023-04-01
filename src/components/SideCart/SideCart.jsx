@@ -4,7 +4,6 @@ import './SideCart.css'
 const SideCart = ({ time, bookedMark }) => {
     // console.log(bookedMark)
     const [spentTime, setSpentTime] = useState(time);
-    // const [title, setTitle]=useState([])
 
     useEffect(() => {
         const getReadTimeFromStorage = localStorage.getItem("readTime")
@@ -12,7 +11,7 @@ const SideCart = ({ time, bookedMark }) => {
     }, [time])
 
     return (
-        <div>
+        <div className='side-cart'>
             <div className='side-container-upper'>
                 <h2 className='on-read-time'>Spent time on read : {spentTime} min</h2>
 
@@ -22,8 +21,8 @@ const SideCart = ({ time, bookedMark }) => {
 
                 <div >
                     {
-                        bookedMark.map(b => <p className='under-booked-mark-blogs'
-                             >{b.blogTitle}
+                        bookedMark.map((b, index) => <p className='under-booked-mark-blogs'
+                             key={index}>{b.blogTitle}
                             </p>)
                     }
                 </div>

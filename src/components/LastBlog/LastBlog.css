@@ -1,0 +1,42 @@
+.last-blog-container{
+    margin: 50px 150px 32px;
+}
+.last-bl-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+.container-for-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 24px;
+
+}
+.individual-question{
+    height: 300px;
+    border-radius: 10px;
+    background-color: rgb(68, 0, 255);
+
+}
+
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+   .last-blog-container{
+        margin: 20px 30px 16px;
+        
+    }
+    .container-for-grid{
+        grid-template-columns: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .last-blog-container{
+        margin: 20px 30px 16px;
+    }
+    .container-for-grid{
+        grid-template-columns: 100%;
+    }
+}

@@ -8,7 +8,6 @@ const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
     const [time, setTime] = useState("");
     const [bookedMark, setBookedMark] = useState([]);
-    // const [id, setId] = useState("");
 
     useEffect(() => {
         fetch('blogs.json')
@@ -21,7 +20,6 @@ const Blogs = () => {
     const timeOnRead = (blog) => {
         // console.log(blog)
         const { readTime } = blog;
-        // console.log(readTime)
         const previousReadTime = JSON.parse(localStorage.getItem('readTime'));
         if (previousReadTime) {
             const total = previousReadTime + readTime;

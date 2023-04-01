@@ -1,3 +1,7 @@
+.side-cart{
+    position: sticky;
+    top: 10px;
+}
 .side-container-upper{
     background: rgba(96, 71, 236, 0.1);
     border: 1px solid #6047EC;
@@ -15,8 +19,6 @@
     background: rgba(17, 17, 17, 0.05);
     border-radius: 8px;
     padding: 30px;
-    /* border: 2px solid red; */
-    /* height: 100vh; */
 }
 .bookmarked-blogs{
     font-style: normal;
@@ -30,15 +32,19 @@
     border-radius: 8px;
     font-style: normal;
     font-weight: 700;
-    font-size: 27px;
+    font-size: 26px;
     padding: 20px;
-    
-    /* width: 351px; */
-    height: 98px;
+    height: 80px;
 }
 
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .under-booked-mark-blogs{
+    font-size: 22px;
+  }
+}
 
-
+/* mobile */
 @media only screen and (max-width: 767px) {
     .side-container-upper{
         padding: 10px 25px;
@@ -51,6 +57,9 @@
         font-size: 18px;
     }
     .bookmarked-blogs{
+        font-size: 18px;
+    }
+    .under-booked-mark-blogs{
         font-size: 18px;
     }
 
