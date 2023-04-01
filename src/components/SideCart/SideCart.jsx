@@ -14,11 +14,9 @@ const SideCart = ({ time, bookedMark }) => {
         <div className='side-cart'>
             <div className='side-container-upper'>
                 <h2 className='on-read-time'>Spent time on read : {spentTime} min</h2>
-
             </div>
             <div className='side-container-lower'>
                 <h1 className='bookmarked-blogs'>Bookmarked Blogs : {bookedMark.length}</h1>
-
                 <div >
                     {
                         bookedMark.map((b, index) => <p className='under-booked-mark-blogs'

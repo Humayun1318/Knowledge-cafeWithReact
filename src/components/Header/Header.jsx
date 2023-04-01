@@ -9,7 +9,6 @@ const Header = () => {
                     <h2 className='header-logo'>Knowledge Cafe</h2>
                 </div>
                 <a href=""><img className='profile-image' src={profile} alt="Images Of profile" /></a>
-
             </nav>
             <hr />
        </div>

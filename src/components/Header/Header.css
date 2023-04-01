@@ -3,7 +3,6 @@
     margin-right: 150px;
     border: 1px solid rgba(17, 17, 17, 0.15);
     height: 0px;
-
 }
 .header {
     height: 80px;
@@ -12,11 +11,7 @@
     align-items: center;
     padding: 3px;
     margin: 50px 150px 32px;
-    /* border: 2px solid black; */
-    
-    
 }
-
 nav.header a{
     text-decoration: none;
     color: black;
@@ -34,6 +29,7 @@ nav.header a{
     font-size: 40px;
 }
 
+/* mobile */
 @media only screen and (max-width: 767px) {
     .header-logo{
         width: 153px;

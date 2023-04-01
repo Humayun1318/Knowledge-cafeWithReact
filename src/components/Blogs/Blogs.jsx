@@ -13,7 +13,6 @@ const Blogs = () => {
         fetch('blogs.json')
             .then(res => res.json())
             .then(data => setBlogs(data))
-
     }, []);
     
     // function for mark as read button which coming blog.jsx component
@@ -43,7 +42,6 @@ const Blogs = () => {
             const newBlog = [...bookedMark, blog];
             setBookedMark(newBlog);
         }
-       
     }
 
     return (
@@ -56,7 +54,6 @@ const Blogs = () => {
                         timeOnRead={timeOnRead}
                         bookedMark={bookedMarkBlogs}
                     >
-
                     </Blog>)
                 }
             </div>
