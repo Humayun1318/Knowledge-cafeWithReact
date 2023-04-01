@@ -8,11 +8,11 @@
 }
 .blog-container{
    width: 100%;
-   border: 5px solid red;
+   /* border: 5px solid red; */
 }
 .side-container{
    /* height: 300px; */
-   border: 5px solid salmon;
+   /* border: 5px solid salmon; */
 }
 
 
@@ -22,7 +22,7 @@
 @media only screen and (max-width: 767px) {
     .blogs-container{
         display: block;
-        margin: 20px 60px 16px;
+        margin: 20px 30px 16px;
     }
     .blog-container{
         width: 100%;

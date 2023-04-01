@@ -1,25 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import './SideCart.css'
 
-const SideCart = ({time, bookedMark}) => {
-    console.log(bookedMark)
+const SideCart = ({ time, bookedMark }) => {
+    // console.log(bookedMark)
     const [spentTime, setSpentTime] = useState(time);
+    // const [title, setTitle]=useState("")
 
     // const [book, setBook] = useState(bookedMark);
-    
+
     // useEffect(() => {
     //     const getBookedMarkFromStorage = JSON.parse(localStorage.getItem("bookedMark"));
     //     setBook(getBookedMarkFromStorage)
     // }, [bookedMark])
-    
+    // let a = " ";
+    // for (const title of bookedMark) {
+    //     if (a) {
+    //         a = title.blogTitle;
+    //     }
+    //     else {
+    //         // alert("hoooooooooooooooo")
+    //     }
+    // }
 
 
-    
+
     useEffect(() => {
         const getReadTimeFromStorage = localStorage.getItem("readTime")
         setSpentTime(getReadTimeFromStorage)
     }, [time])
-    
+
     return (
         <div>
             <div className='side-container-upper'>
@@ -29,8 +38,12 @@ const SideCart = ({time, bookedMark}) => {
             <div className='side-container-lower'>
                 <h1 className='bookmarked-blogs'>Bookmarked Blogs : {bookedMark.length}</h1>
 
-                <div>
-                    <p className='under-booked-mark-blogs'>{bookedMark[0].blogTitle}</p>
+                <div >
+                    {
+                        bookedMark.map(b => <p className='under-booked-mark-blogs'
+                            >{b.blogTitle}
+                            </p>)
+                    }
                 </div>
             </div>
         </div>
